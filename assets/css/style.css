@@ -12,3 +12,18 @@ body.before {
     position: fixed;
     background: rgba(0, 0, 0, 0.5); 
 }  
+
+/* Navbar*/
+.navbar {
+    background-color: rgba(0, 0, 0, 0.9) !important;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.6);
+}
+
+.navbar-brand,
+.nav-link {
+    color: #fff !important;
+}
+
+.nav-link:hover {
+    color: #ffffff !important;
+}
