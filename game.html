@@ -34,6 +34,18 @@
     </div>
   </div>
 </nav>
-    
+    <div class="container text-center mt-5">
+
+  <h1 class="game-title">Guess The Number</h1>
+  <p class="game-subtitle">Choose a number between 1 and 100</p>
+
+  <div class="card game-card mx-auto mt-4">
+    <div class="card-body">
+<!-- Label for screen readers -->
+<label for="guessInput" class="visually-hidden">Enter your guess (1-100)</label>
+<input type="number" class="form-control mb-3" id="guessInput" placeholder="Enter your guess">
+
+ <button id="checkBtn" class="btn btn-secondary me-2">Check</button>
+<button id="resetBtn" class="btn btn-outline-light">Reset</button>
 </body>
 </html>
