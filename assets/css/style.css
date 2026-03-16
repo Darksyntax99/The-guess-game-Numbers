@@ -27,3 +27,34 @@ body.before {
 .nav-link:hover {
     color: #ffffff !important;
 }
+
+/* tittle */
+h1 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #fff;
+}
+
+/* Button */
+.btn-secondary {
+    background-color: #000 !important;
+    border: none;
+    color: #fff;
+    margin: 20px auto;
+    padding: 10px 30px;
+    font-weight: bold;
+}
+.btn-secondary {
+    transition: all 0.3s ease;
+}
+
+.btn-secondary:hover {
+    box-shadow: 
+        0 0 10px #FFD700,
+        0 0 20px #FFD700,
+        0 0 40px #FFD700;
+    transform: scale(1.05);
+}
+footer.bg-dark {
+    background-color: #000000 !important;
+} 
