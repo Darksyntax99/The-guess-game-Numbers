@@ -17,4 +17,21 @@ $(document).ready(function() {
             $(".result").text("Enter your number between 1 and 100.");
             return;
         }
-        
+/* check if player guess is correct */
+    if (playersGuess === secretgameNumber) {
+        $(".result").text("Woooww! you guessed the number you win the game.");
+        gameisOver = true;
+    } else {
+        attempts--;
+        $('#attempts').text(`Attempts: ${attempts}`);
+        if (attempts === 0) {
+            $(".result").text("Game Over! try again");
+            gameisOver = true;
+        } else if (playersGuess < secretgameNumber) {
+            $(".result").text("Try guess higher! try again.");
+        } else {
+            $(".result").text("Try guess lower! try again.");
+        }               
+    }
+    });
+});
