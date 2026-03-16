@@ -35,3 +35,18 @@ $(document).ready(function() {
     }
     });
 });
+ /* reset the game */
+ $("#resetBtn").click(function() {
+        secretgameNumber = Math.floor(Math.random() * 100) + 1;
+        attempts = 5;
+        gameisOver = false;
+        $('#attempts').text(`Attempts: ${attempts}`);
+        $(".result").text("Start guessing again!");
+        $("#guessInput").val("");
+    }
+    );
+ $("#guessInput").keypress(function(e) {
+        if (e.which === 13) { 
+            $("#checkBtn").click();
+      }
+});
