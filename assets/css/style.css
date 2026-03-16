@@ -58,3 +58,44 @@ h1 {
 footer.bg-dark {
     background-color: #000000 !important;
 } 
+
+* Game Card */
+
+.game-card {
+    background: rgba(0, 0, 0, 0.85);
+    border: 2px solid #FFD700;
+    border-radius: 15px;
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.4);
+}
+
+/* Input */
+#guessInput {
+    background-color: #000;
+    border: 1px solid #FFD700;
+    color : #FFD700;
+    text-align: center;
+    font-weight: bold;
+}
+
+#guessInput::placeholder {
+    color: rgba(255, 215, 0, 0.6);
+}
+
+#guessInput:focus {
+    background-color: #000;
+    border-color: #FFD700;
+    box-shadow:
+        0 0 10px #FFD700,
+        0 0 20px #FFD700;
+    color: #FFD700;
+}
+
+/* Reset Button */
+.btn-outline-light {
+    border: 1px solid #FFD700;
+    color: #FFD700;
+    background-color: #000;
+    font-weight: bold;
+    transition: all 0.3s ease;
+} 
+
