@@ -1,1 +1,14 @@
 /* Guess The Number Game CSS */
+body {
+    background-image: url('../images/A42F46A0-67A0-41B0-A242-54160105EEF3.jpeg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #ffffff; 
+    font-family: 'Rye', cursive !important
+}
+body.before {
+    position: fixed;
+    background: rgba(0, 0, 0, 0.5); 
+}  
