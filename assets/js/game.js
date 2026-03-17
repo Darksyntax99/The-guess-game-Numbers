@@ -1,12 +1,15 @@
 /* jshint esversion: 6 */
 /* global $ */
-$(document).ready(function() {
+
      /* create a random numbers between 1 and 100 */
  let secretgameNumber = Math.floor(Math.random() * 100) + 1;
  /* tries number */
  let attempts = 5;
  /* game is over or not */
  let gameisOver = false;
+
+ /* Jquery for the game */
+$(document).ready(function() {
  /* show the attempts number */
     $('#attempts').text(`Attempts: ${attempts}`);
     /* when button is clicked */
