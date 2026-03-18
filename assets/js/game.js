@@ -11,14 +11,16 @@
  /* Jquery for the game */
 $(document).ready(function() {
  /* show the attempts number */
-    $('#attempts').text(`Attempts: ${attempts}`);
+    $("#attempts").text("Attempts: " + attempts);
     /* when button is clicked */
     $("#checkBtn").click(function() {
-     if (gameisOver) return; 
+     if (gameisOver) {
+        return;
+     }
       /* get player guess */
      let playersGuess = Number($("#guessInput").val()); 
      /* check if player guess is valid */
-        if (playersGuess < 1 || playersGuess > 100 || isNaN(playersGuess)) {
+        if (playersGuess < 1 || playersGuess > 100 || Number.isNaN(playersGuess)) {
             $(".result").text("Enter your number between 1 and 100.");
             return;
         }
@@ -27,8 +29,8 @@ $(document).ready(function() {
         $(".result").text("Woooww! you guessed the number you win the game.");
         gameisOver = true;
     } else {
-        attempts--;
-        $('#attempts').text(`Attempts: ${attempts}`);
+        attempts= attempts - 1;
+        $("#attempts").text("Attempts: " + attempts);
         if (attempts === 0) {
             $(".result").text("Game Over! try again");
             gameisOver = true;
@@ -45,7 +47,7 @@ $(document).ready(function() {
         secretgameNumber = Math.floor(Math.random() * 100) + 1;
         attempts = 5;
         gameisOver = false;
-        $('#attempts').text(`Attempts: ${attempts}`);
+        $("#attempts").text("Attempts: " + attempts);
         $(".result").text("Start guessing again!");
         $("#guessInput").val("");
     }
