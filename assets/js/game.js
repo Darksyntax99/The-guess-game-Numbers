@@ -20,7 +20,7 @@ $(document).ready(function() {
       /* get player guess */
      let playersGuess = Number($("#guessInput").val()); 
      /* check if player guess is valid */
-        if (playersGuess < 1 || playersGuess > 100 || Number.isNaN(playersGuess)) {
+        if (playersGuess < 1 || playersGuess > 100 || isNaN(playersGuess)) {
             $(".result").text("Enter your number between 1 and 100.");
             return;
         }
