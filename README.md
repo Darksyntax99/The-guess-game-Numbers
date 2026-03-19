@@ -68,6 +68,16 @@ Manual testing involves testing the application by interacting with it as a user
 | Enter Key         | Submits guess using keyboard        | 1. Enter number  2. Press Enter                                       | Works as expected / pass |
 | GitHub Icon       | Opens link in new tab               | 1. Click GitHub icon in footer                                            | Works as expected / pass |
 | Responsive Layout | Layout adapts to screen sizes       | 1. Resize browser (Desktop, Tablet, Mobile)                               | Works as expected / pass |
+| Console Errors | No errors appear in the console | 1. Open DevTools  2. Click Console tab 3. Play the game fully | No errors found / pass |
+
+## Console Testing 
+- No console errors were found during manual testing all user interaction were tested and the console remained clear.
+![screen,test](./assets/images/Screenshot%202026-03-19%20at%2010.26.03.png)
+
+![screen,test](./assets/images/Screenshot%202026-03-19%20at%2010.25.40.png)
+
+![screen,test](./assets/images/Screenshot%202026-03-19%20at%2010.25.14.png)
+
 
 ### Automated Testing
 Automated testing involves using tools to validate code without manual interaction.
